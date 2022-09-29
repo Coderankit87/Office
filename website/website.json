@@ -1,0 +1,25 @@
+{
+  "title": "website",
+  "steps": [
+    {
+      "type": "setViewport",
+      "width": 1343,
+      "height": 657,
+      "deviceScaleFactor": 1,
+      "isMobile": false,
+      "hasTouch": false,
+      "isLandscape": false
+    },
+    {
+      "type": "navigate",
+      "url": "http://127.0.0.1:5500/website/website.html",
+      "assertedEvents": [
+        {
+          "type": "navigation",
+          "url": "http://127.0.0.1:5500/website/website.html",
+          "title": "Business"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,405 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: black;
+    height: 10%;
+}
+
+header img{
+    height: 100px;
+    margin-top: -16px;
+    margin-left: 2rem
+}
+
+.menu{
+    width: 400px;
+    float: right;
+    height: 70px;
+}
+
+ul{
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 28rem;
+    margin-top: 4px
+}
+
+ul li{
+    list-style: none;
+    margin-left: 62px;
+    margin-top: 27px;
+    font-size: 14px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+ul li a:hover{
+    color: #ff7200;
+
+}
+
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    top: 5px;
+    width: 77%;
+    margin: auto;
+ }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+  main{
+    background-image: url(Logo/1.jpg);
+    height: 100vh;
+    backdrop-filter: blur(20px);
+    background-position: center;
+    background-size: cover;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  .search{
+    width: 330px;
+    float: right;
+    margin-left: 17rem;
+    margin-right: -415px;
+    margin-top: 3px;
+}
+
+.srch{
+    font-family: 'Times New Roman';
+    width: 200px;
+    height: 40px;
+    background: transparent;
+    border: 1px solid #ff7200;
+    margin-top: 13px;
+    color: #fff;
+    border-right: none;
+    font-size: 16px;
+    float: left;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.btn{
+    width: 100px;
+    height: 40px;
+    background: #ff7200;
+    border: 2px solid #ff7200;
+    margin-top: 13px;
+    color: #fff;
+    font-size: 15px;
+    border-bottom-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+.btn:hover{
+    color: #000;
+}
+
+.btn:focus{
+    outline: none;
+}
+
+.srch:focus{
+    outline: none;
+}
+
+.main{
+  display: flex;
+    margin: 15px 15px 15px 15px;
+    justify-content: space-between;
+    padding: 10px 10px 10px 10px;
+
+}
+
+.flip-card{
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+ 
+}
+
+.flip-card-inner{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner{
+transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back{
+
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front{
+
+  background-image: linear-gradient(to right top, #000000, #29212b, #39425a, #296a86, #11959b);
+}
+
+.flip-card-front img{
+  width: 220px;
+  margin-top: 1rem;
+}
+
+.flip-card-back{
+
+  background-image: linear-gradient(to right top, #000000, #29212b, #39425a, #296a86, #11959b);
+    transform: rotateY(180deg);
+}
+
+.flip-card-back img{
+  width: 140px;
+  margin-top: 1rem;
+}
+
+.flip-card-back h1{
+  margin-bottom: 0.3rem;
+}
+
+.flip-card-back h1{
+  margin: 0;
+}
+
+.flip-card-1{
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+  
+}
+
+
+.flip-card-inner-1{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  
+}
+
+.flip-card-1:hover .flip-card-inner-1{
+  transform: rotateY(180deg);
+  }
+
+.flip-card-front-1,
+.flip-card-back-1{
+
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front-1{
+
+  background-image: linear-gradient(to right top, #000000, #29212b, #39425a, #296a86, #11959b);
+
+}
+
+.flip-card-front-1 img{
+width: 220px;
+margin-top: 1rem;
+}
+
+.flip-card-back-1{
+
+  background-image: linear-gradient(to right top, #000000, #29212b, #39425a, #296a86, #11959b);
+  transform: rotateY(180deg);
+}
+
+.flip-card-back-1 img{
+width: 140px;
+margin-top: 1rem;
+}
+
+.flip-card-back-1 h1{
+  margin-bottom: 0.3rem;
+}
+
+.flip-card-back-1 h1{
+  margin: 0;
+}
+
+
+
+.flip-card-2{
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+  
+ 
+}
+
+.flip-card-inner-2{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip-card-2:hover .flip-card-inner-2{
+  transform: rotateY(180deg);
+  }
+
+.flip-card-front-2,
+.flip-card-back-2{
+
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front-2{
+
+  background-image: linear-gradient(to right top, #000000, #29212b, #39425a, #296a86, #11959b);
+}
+
+.flip-card-front-2 img{
+width: 220px;
+margin-top: 1rem;
+}
+
+.flip-card-back-2{
+
+  background-image: linear-gradient(to right top, #000000, #29212b, #39425a, #296a86, #11959b);
+transform: rotateY(180deg);
+}
+
+.flip-card-back-2 img{
+width: 140px;
+margin-top: 1rem;
+}
+
+.flip-card-back-2 h1{
+  margin-bottom: 0.3rem;
+}
+
+.flip-card-back-2 h1{
+  margin: 0;
+}
+
+.main{
+  margin-left: 14px;
+}
+
+.container{
+  display: flex;
+  margin: 15px 15px 15px 15px;
+  justify-content: space-between;
+  padding: 10px 10px 10px 10px;
+}
+
+

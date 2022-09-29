@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styl2.css">
+    <!-- CSS only -->
+   
+    
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar bg-light">
+        <div class="container-fluid">
+            <img src="https://raw.githubusercontent.com/tylim88/crypto-symbol/master/img/symbol.png" alt="">
+            <a class="navbar-brand" href="#">Cryptro</a>
+
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Pages</a></li>
+                <li><a href="">Our Service</a></li>
+                <li><a href="">Our Cases</a></li>
+                <li><a href="">Features</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Shop</a></li>
+                <li><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                </svg></a></li>
+                <li><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                </svg></a></li>
+            </ul>
+        </div>
+       
+    </nav>
+
+    <section>
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="data:image/jpeg;base64,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" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://c4.wallpaperflare.com/wallpaper/905/666/494/background-render-fon-bitcoin-bitcoin-hd-wallpaper-preview.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="data:image/jpeg;base64,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" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <div class="row">
+                <div class="fluid">
+                    <img src="kissclipart-blockchain-icon-aaf6131173ad15da-removebg-preview.png" alt="">
+                </div>
+                <div class="right">
+                    <h1>Decentralization</h1>
+                    <h2>Revolution of money system</h2> <br>
+                    <p>Cryptro is a Decentralised public block chain and cryptocrruency project and <Br>
+                        is fully open source. Cardano is developing a smart contact platform</p>
+                    <button>Learn More</button>
+                    <button class="btn btn-primary">Our Story</button>
+                </div>
+            </div>
+        </div>
+    </section>
+   
+        <div class="hcl">
+            <div class="md-5">
+                <P>In a world where three billion people are connected online, cars <br>
+                    drive themselves and appliances can communicate, global <br>
+                    payments are still stuck in the disco era.
+                </P><br>
+                <h2>Why? The Payment infrastructure was built before the <br>
+                     internet with few updates</h2>
+            </div>
+            <div class="md-6">
+                <img src="https://a6e8z9v6.stackpathcdn.com/cryptro/currency/wp-content/uploads/2018/04/about-icon-600x132.png
+                
+                " alt="">
+            </div>
+        </div>
+        <section id="hash">
+            <div class="background">  
+                
+                    <div class="left-1">
+                        <img src="istockphoto-1299615596-612x612-removebg-preview.png" alt="">
+
+                        <div class="right-1">
+                            <h1>What is Cryptro?</h1>
+                            <p>Cryptro is a Decentralised public blockchain and cryptocurrency project and is fully open source.The <br> development team consists of a large collective of expert engineers and researchers. crypto is developing a <br> poweful and genius contarct platfrom which seeks deliver more adavnced features than any protocol<br> developed previously. it is the first blockchain platform to evolve out of scientific philosophy and a research <br> first driven approach.</p>
+
+                            <div>
+                                <div class="main">
+                                <div class="block-1">
+                                    <p class="para"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right"
+                                        viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                                    </svg>An innovative hybrid proof-of-work</p>
+                                    <p class="para"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right"
+                                        viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                                    </svg>Proof-of-stack (Pos) consensus voting system</p>
+                                    <p class="para"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right"
+                                        viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                                    </svg>instant, on demand settlement</p>
+                                </div>
+                                <div class="block-2">
+                                    <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right"
+                                        viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                                    </svg>smart contracts that work such as lightining network</p>
+                                    <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right"
+                                        viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                                    </svg>Proof-of-stack (Pos) consensus voting system</p>
+                                    <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right"
+                                        viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                                    </svg>conectivity across payment network</p>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="more">
+                                <a href="">Read more <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right"
+                                    viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                                </svg></a>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </section>
+
+        <section class="sec">
+            <div class="plan">
+                <div class="p-1">
+                    <img src="https://images.unsplash.com/photo-1621416894569-0f39ed31d247?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8Yml0Y29pbnxlbnwwfHwwfHw%3D&w=1000&q=80" alt="">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHcPb82zzvF56nICQKCFu81z4XLSQN0R4aDQ&usqp=CAU" alt="">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb70tu29cVjYKkv4irXeNcW3xRQyLAY-g1kA&usqp=CAU" alt="">
+                </div> <br>
+                <div class="p-2">
+                    <img src="https://images.unsplash.com/photo-1621416894569-0f39ed31d247?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8Yml0Y29pbnxlbnwwfHwwfHw%3D&w=1000&q=80" alt="">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHcPb82zzvF56nICQKCFu81z4XLSQN0R4aDQ&usqp=CAU" alt="">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb70tu29cVjYKkv4irXeNcW3xRQyLAY-g1kA&usqp=CAU" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section id="comit">
+            <div class="bg-2">
+                <div class="column-1">
+                        <img src="phone.png" alt="">
+                        <div class="img">
+                        <img src="https://1000logos.net/wp-content/uploads/2018/05/Bitcoin-Logo-2010.png" alt="">
+                        <div style="padding-left: 2.5rem; padding-top: 2rem;">
+                            <p style="padding-left: 3rem; font-weight: bold; font-family: sans-serif;">Cryptro</p>
+                            <p>Cryptocurrency themes </p>
+                        </div>
+                </div>
+            </div>
+            <div class="column-2">
+                <h1>The Fastest Growing Network</h1>
+                <p>Thanks to incentivization , cryptro's network has grown to 4,100 masternodes <br>
+                    since launch in 2014.
+                </p>
+        <p class="para-2">In cryptro, everyone has a voice and ability to propose projects directly to the network. <br>    
+            Anything you can do- from marketing to development- that helps cryptro grow and improve <br>
+            can be funded. This means cryptro funds its own growth and adoption, consensus is guranteed <br>
+            and everyone is accountable to the network. 
+        </p>
+            </div>
+        </section>
+
+        <section style="padding-top: 2rem;">
+            <div class="investor">
+                <div class="side-1">
+                    <h1>Our Partner & Investors</h1>
+                </div>
+                <div class="lb-1">
+                    <div class="lb-2">
+                        <img src="west-2.png" alt="">
+                        <img src="copy.png" alt="">
+                        <img src="axis.png" alt="">
+                        <img src="slide.png" alt="">
+                    </div>
+                    <div class="lb-3">
+                        <img src="west-2.png" alt="">
+                        <img src="copy.png" alt="">
+                        <img src="axis.png" alt="">
+                        <img src="slide.png" alt="">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section>
+            <div class="container-4">
+                <h1 class="hed">Technology in Cryptro</h1>
+                <div class="sm-1">
+                    <div class="logo-3">
+                        <img src="images-removebg-preview (3).png" alt="">
+                    </div>
+                    <div class="caption">
+                        <div class="heading">
+                        <h1>Meet Cryptro System</h1>
+                        <p class="cry">Cryptro connects banks, payments providers,digital asset exchanges and <br>
+                            corporates via cryptro to provide one frictionless experience to send money <br>
+                            globally.
+                        </p>
+                        </div>
+                        <div class="list">
+                            <p class="list-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right"
+                                viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                            </svg>Connectivity across paymest networks</p>
+                            <p class="list-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right"
+                                viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                            </svg>Instant, on-demand settlement</p>
+                            <p class="list-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right"
+                                viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                            </svg>Low operational and liquidity costs</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sm-2">
+                <div class="caption-2">
+                    <div class="heading-2">
+                        <h1>Privacy is Priority</h1>
+             <p>Protect your financial infromation. PrivateSend ensures your activity history and balances are <br> private.. ecurity you can count on. Transaction are confirmed by 200 Terraharsh X11 ASIC <br>
+                computing power and over 4,500 servers hosted around the world.
+
+            </p>
+                    </div>
+                    <div class="list">
+                        <p class="list-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right"
+                            viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                        </svg>Connectivity across paymest networks</p>
+                        <p class="list-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right"
+                            viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                        </svg>Instant, on-demand settlement</p>
+                        <p class="list-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right"
+                            viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                        </svg>Low operational and liquidity costs</p>
+                    </div>
+                </div>
+                <div class="logo-4">
+                    <img src="block.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="growing">
+                <div class="b-1">
+                    <h1>Growing Global Network</h1>
+                </div>
+                <div class="rating">
+                    <div class="rating-1">
+                        <div class="rating-2">
+                            <h1>97+</h1>
+                            <p>Institution <br>
+                            Customers</p>
+                        </div>
+                        <div class="rating-3">
+                            <h1>290k</h1>
+                            <p>Token <br>
+                                Holders
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="rating">
+                    <div class="rating-1">
+                        <div class="rating-2">
+                            <h1>29X</h1>
+                            <p>Front Speed  
+                                of transaction</p>
+                        </div>
+                        <div class="rating-3">
+                            <h1>107+</h1>
+                            <p>supported <br>
+                                Countries
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="fl-1">
+                    <p>The Cryptro wallet is a gateway to Decentralised application on <br>
+                    the Ethereum blockchain. it allows you to hold and secure cryptro</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="hash-1">
+            <div class="teams">
+                <h1>Meet The Teams</h1>
+            </div>
+            <div class="row-1">
+                <div class="col-md-3 profile-pic text-centre">
+                    <div class="img-box">
+                        <img src="image_1.jpg" class="img-responsive">
+                    </div>
+                    <h2 style="margin-left: 5rem;">Jane Doe</h2>
+                    <h3 style="color: white; margin-left: 4rem;">CEO &amp; Founder</h3>
+                </div>
+            
+                <div class="col-md-3 profile-pic text-centre">
+                    <div class="img-box">
+                        <img src="image_2.jpg" class="img-responsive">
+                    </div>
+                    <h2 style="margin-left: 5rem;">Mike Ross</h2>
+                    <h3 style="color:white; margin-left: 5rem;">Art Director</h3>
+
+                </div>
+            
+                <div class="col-md-3 profile-pic text-centre">
+                    <div class="img-box">
+                        <img src="image_3.jpg" class="img-responsive">
+                    </div>
+                    <h2 style="margin-left: 5rem;">John Doe</h2>
+                    <h3 style="color: white; margin-left: 6rem;">Designer</h3>
+                </div>
+            </div>
+        </section>
+
+        <section id="bran">
+            <div class="brand">
+                <div class="head-1">
+                    <h1>Where To Trade Cryptro Coin</h1>
+                    <h3>Cryptro is listed in various popular crypto exchange</h3>
+                </div>
+                <div class="cap">
+                    <p class="ever">Everrcoin</p>
+                    <p class="bit">BITREX</p>
+                    <p class="ac">ACUCOIN</p>
+                    <p class="rd">RDax.</p>
+                    <p class="humbr">BitHumbr</p>
+                </div>
+                <div class="link">
+                    <a href="">View Full list <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right"
+                        viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                    </svg></a>
+                </div>
+            </div>            
+        </section>
+
+        <section>
+            <div class="picture">
+                <div class="main-3">
+                    <div class="main-4">
+                        <div class="hms">
+                            <h1>Cryptro.</h1> <br>
+                            <p>In Crptro, everyone has a voice and <br> the ability to propose projects directly <br> to the network. Anything you can do. </p> <br>
+                            <p>121 Park Ave S New York 1003</p> <br>
+                            <p style="color: white;">sales@crptrotheme.com</p>
+
+                        </div>
+                    </div>
+                    <div class="hms-2">
+                    <h1 style="color: white;">Get Updated</h1> <br>
+                    <p style="color: darkgrey;">Subscribe our newsletter to get updated <br> on market situation</p> <br>
+                        <input style=" border: 1px solid #ccc;" type="text" placeholder="Email.."> <br> <br>
+                        <button type="button">Subscribe</button>
+                    </div>
+                    <div class="hms-3"> 
+                        <h1 style="color: white;">Resource</h1> <br>
+                        <div class="flex">
+                        <ul style="color: white; line-height: 1.7;">
+                            <li>About us</li>
+                            <li>Github</li>
+                            <li>Support</li>
+                            <li>Term of Service</li>
+                        </ul>
+                        <ul style="color: white; line-height: 1.7;">
+                            <li>Whitepaper</li>
+                            <li>Download</li>
+                            <li>FAQ</li>
+                            <li>License</li>
+                        </ul>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                         <div class="box-1">
+                            <img src="https://bitcoin.org/img/icons/opengraph.png?1662473327" alt="">
+                            <h1>Bitcoin</h1>
+                         </div>  
+                         <div class="line-1" style="font-weight: 900;">
+                            <p>% 1h <br><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill"
+                                viewBox="0 0 16 16">
+                                <path
+                                    d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                            </svg> 0.30</p> 
+                            
+                            <div class="p-1">
+                                <p>% 24h <br><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                                </svg> 6.04</p>
+                            </div>
+                            <div p-2>
+                                <p>% 7d <br><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                                </svg> 13.44</p>
+                            </div>
+                         </div>
+                         <div class="line-2">
+                            <div class="m-1">
+                                <p>BTC <br> 0.9992</p>
+                            </div>
+                            <div class="m-2">
+                                <p>BCH <br>172.14</p>
+                            </div>
+                            <div class="m-3">
+                                <p>ETH <br>14.37</p>
+                            </div>
+                         </div> 
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+        <section>
+            <div class="footer">
+                <div class="footer-1">
+                    <h1>Copyright © 2019, All Right Reserved</h1>
+                </div>
+                <div class="icons">
+                    <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                    </svg></a>
+                    <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+                    </svg></a>
+                    <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                    </svg></a>
+                    <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" />
+                    </svg></a>
+                </div>
+            </div>
+        </section>
+    
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,694 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.navbar {
+    --bs-bg-opacity: 1;
+    background-color: rgb(0 0 0);
+}
+
+
+.navbar-brand {
+    padding-top: var(--bs-navbar-brand-padding-y);
+    padding-bottom: var(--bs-navbar-brand-padding-y);
+    margin-right: var(--bs-navbar-brand-margin-end);
+    font-size: var(--bs-navbar-brand-font-size);
+    color: rgb(255 193 7);;
+    text-decoration: none;
+    white-space: nowrap;
+    padding-right: 24rem;
+}
+
+.navbar {
+    --bs-navbar-padding-x: 0;
+    --bs-navbar-padding-y: 0.5rem;
+    --bs-navbar-color: rgb(0 0 0 / 55%);
+    --bs-navbar-hover-color: rgb(0 0 0 / 70%);
+    --bs-navbar-disabled-color: rgb(0 0 0 / 30%);
+    --bs-navbar-active-color: rgb(0 0 0 / 90%);
+    --bs-navbar-brand-padding-y: 0.3125rem;
+    --bs-navbar-brand-margin-end: 1rem;
+    --bs-navbar-brand-font-size: 1.25rem;
+    --bs-navbar-brand-color: rgb(0 0 0 / 90%);
+    --bs-navbar-brand-hover-color: rgb(0 0 0 / 90%);
+    --bs-navbar-nav-link-padding-x: 0.5rem;
+    --bs-navbar-toggler-padding-y: 0.25rem;
+    --bs-navbar-toggler-padding-x: 0.75rem;
+    --bs-navbar-toggler-font-size: 1.25rem;
+    --bs-navbar-toggler-icon-bg: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e);
+    --bs-navbar-toggler-border-color: rgb(0 0 0 / 10%);
+    --bs-navbar-toggler-border-radius: 0.375rem;
+    --bs-navbar-toggler-focus-width: 0.25rem;
+    --bs-navbar-toggler-transition: box-shadow 0.15s ease-in-out;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--bs-navbar-padding-y) var(--bs-navbar-padding-x);
+}
+
+.navbar>.container,.navbar>
+.container-fluid,.navbar>.container-lg,.navbar>.container-md,
+.navbar>.container-sm,
+.navbar>.container-xl,
+.navbar>.container-xxl {
+    display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container-fluid{
+    --bs-gutter-x: 1.5rem;
+        --bs-gutter-y: 0;
+        width: 100%;
+        padding-right: calc(var(--bs-gutter-x) * .5);
+        padding-left: calc(var(--bs-gutter-x) * .5);
+        margin-right: auto;
+        margin-left: auto;
+}
+
+.container-fluid ul{
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+
+.container-fluid ul li a{
+    color: #ffff;
+    text-decoration: none;
+}
+
+svg{
+    font-weight: bolder;
+}
+
+svg:hover{
+    color: rgb(255, 183, 0);
+    transition: 0.5s;
+}
+
+.container-fluid img{
+    height: 2rem;
+}
+
+ img:hover{
+    color: darkgoldenrod;
+}
+
+.container-fluid ul li a:hover{
+    color: coral;
+    transition: 0.5s;
+}
+
+.w-100{
+    width: 100%;
+    height: 500px;
+}
+
+.row{
+    display: flex;
+    padding-left: 5rem;
+    margin-top: -25rem;
+}
+
+.right{
+        padding-left: 9rem;
+        padding-top: 3rem;
+}
+
+.right h1{
+    font-family: sans-serif;
+    font-size: 4rem;
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+}
+
+.fluid img{
+    height: 16rem;
+}
+
+.right h2{
+    font-family: sans-serif;
+    color: rgb(255 193 7);
+    border-bottom: 1px solid rgb(255, 193, 7);
+}
+
+.right p{
+    font-family: sans-serif;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+.right button{
+    font-family: sans-serif;
+        margin-top: 2rem;
+        font-size: 15px;
+        width: 9rem;
+        height: 3rem;
+        border-radius: 22px;
+        background-color: rgb(255 193 7);;
+}
+
+button.btn{
+    font-family: sans-serif;
+    margin-top: 2rem;
+        font-size: 15px;
+        width: 9rem;
+        height: 3rem;
+        border-radius: 22px;
+        background-color: rgb(255 255 255);
+}
+
+.hcl{
+    display: flex;
+    width: 100%;
+    background-color: rgb(255, 193, 7);
+    padding-top: 17rem;
+}
+
+.md-5{
+    padding-bottom: 3rem;
+}
+.md-5 p{
+    font-family: sans-serif;
+    padding-left: 2rem;
+    margin-top: -5rem;
+    line-height: 1.5
+}
+
+.md-5 h2{
+    padding-left: 2rem;
+        font-size: 16px;
+        font-family: sans-serif;
+        line-height: 1.3;
+}
+
+.md-6 img{
+    height: 7rem;
+    padding-left: 11rem;
+    margin-top: -5rem;
+}
+
+.background{
+    background-image: url(img8.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    background-attachment: fixed;
+}
+
+#hash{
+    padding-top: 2rem;
+}
+.left-1{
+    display: flex;
+}
+.background .left-1 img{
+    height: 17rem;
+        padding-left: 2rem;
+}
+
+.background .right-1 h1{
+    color: gold;
+    line-height: 3;
+        font-weight: bolder;
+}
+
+.background .right-1 p{
+    color: darkgrey;
+    line-height: 1.6;
+}
+
+.right-1{
+    padding-left: 5rem;
+        padding-top: 3rem;
+}
+
+.block-1{
+    padding-top: 2rem;
+}
+
+.main{
+    display: flex;
+}
+
+.block-2{
+    padding-top: 2rem;
+    padding-left: 4rem;
+}
+
+.block-1 .para svg{
+    color: gold;
+}
+
+.block-2 p svg {
+    color: gold;
+}
+
+.more{
+    padding-top: 2rem;
+}
+
+.more a {
+    color: gold;
+    text-decoration: none;
+}
+.p-1 img{
+    height: 16rem;
+}
+
+.p-1{
+    display: flex;
+        justify-content: space-evenly;
+}
+
+.plan{
+    background-color: rgb(68, 68, 68);
+}
+
+.p-2 img{
+    height: 16rem;
+    
+}
+
+.p-2{
+        display: flex;
+        justify-content: space-evenly;
+    
+}
+
+.sec{
+    margin-top: 1rem;
+}
+
+.bg-2{
+    display: flex;
+    background-image: url(bg-3.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+        height: 70vh;
+        background-position: center;
+}
+
+#comit{
+    margin-top: 1rem;
+}
+
+.img {
+    margin-top: -22rem;
+        padding-left: 9rem;
+}
+
+.img img{
+    height: 8rem;
+}
+
+.column-2 h1{
+    color: gold;
+    padding-top: 3rem;
+    border-bottom: 1px solid #ffd700;
+    font-size: 27px;
+    font-weight: 900;
+    font-family: sans-serif;
+}
+
+.column-2 p{
+    color: rgb(240 248 255);
+        padding-top: 5rem;
+        font-size: 20px;
+        font-family: sans-serif;
+        line-height: 1.4;
+    
+}
+
+.column-2 .para-2{
+    padding-top: 4em;
+        font-size: 1em;
+    color: rgb(163, 170, 175);
+    line-height: 1.6;
+}
+
+.investor{
+            background-image: url(earth.jpg);
+            background-size: cover;
+            height: 95vh;
+
+}
+
+.side-1{
+    padding-top: 6rem;
+    padding-left: 2rem;
+}
+
+.side-1 h1{
+    color: rgb(255, 255, 255);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.lb-2{
+    padding-top: 5rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.lb-2 img{
+    height: 5rem;
+}
+
+.lb-3 img{
+    height: 5rem;
+}
+
+.lb-3{
+    display: flex;
+        justify-content: space-around;
+    padding-top: 4rem;
+}
+
+.lb-1{
+    padding-top: 5rem;
+}
+
+.logo-3 img{
+    height: 24rem;
+}
+
+.sm-1{
+    display: flex;
+    justify-content: space-around;
+}
+
+.caption h1{
+        padding-top: 6rem;
+        padding-left: 2rem;
+        font-weight: 900;
+        font-family: sans-serif;
+        
+}
+
+.caption .cry{
+    padding-top: 2rem;
+    padding-left: 2rem;
+}
+
+.list{
+    padding-left: 2rem;
+    padding-top: 2rem;
+    line-height: 1.6;
+    color: rgb(176, 180, 184);
+}
+
+.list svg{
+    color: goldenrod;
+}
+
+.container-4 .hed{
+        padding-left: 2rem;
+        padding-top: 1rem;
+        font-size: 30px;
+        font-weight: 900;
+}
+
+.heading-2 h1{
+    padding-left: 2rem;
+    padding-top: 5rem;
+    font-weight: 900;
+    font-family: sans-serif;
+}
+
+.heading-2 p{
+    padding-left: 2rem;
+    padding-top: 2rem;
+    line-height: 1.3;
+}
+
+.sm-2{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.logo-4 img{
+    height: 24rem;
+}
+
+.logo-4{
+    padding-left: 9rem;
+}
+
+.growing{
+    background-image: url(world.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 80vh;
+    filter: blur();
+}
+
+.b-1 h1{
+    color: rgb(255, 255, 7);
+        font-weight: bold;
+        text-align: center;
+    padding-top: 4rem;
+        font-size: 28px;
+}
+
+.rating-2 h1{
+    color: rgb(255 255 255);
+        padding-left: 35%;
+        padding-top: 4rem;
+        font-size: 5rem;
+    
+}
+
+.rating-1{
+    display: flex;
+    justify-content: center;
+}
+
+.rating-2 p{
+    color: #ffd700;
+    padding-top: 6rem;
+        padding-left: 2rem;
+}
+
+.rating-2{
+    display: flex;
+}
+
+.rating-3{
+    color: rgb(255 255 255);
+        padding-left: 11rem;
+        display: flex;
+        padding-top: 4rem;
+}
+
+.rating-3 h1{
+    color: rgb(255 255 255);
+        font-size: 5rem;
+}
+
+.rating-3 p{
+    color: #ffd700;
+    padding-top: 2rem;
+        padding-left: 2rem;
+}
+
+.fl-1 p{
+    color: rgb(255 255 255);
+        text-align: center;
+        padding-top: 1rem;
+        font-family: sans-serif;
+
+}
+
+#hash-1{
+    padding-top: 2rem;
+}
+
+.teams{
+    background-image: url(images.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 70vh;
+
+}
+
+.teams h1{
+    color: white;
+    font-weight: 900;
+    font-family: sans-serif;
+    text-align: center;
+    padding-top: 3rem;
+}
+.row-1{
+    display: flex;
+        padding-left: 5rem;
+        margin-top: -17rem;
+    justify-content: space-around;
+
+}
+.row-1 h2{
+    color: rgb(255, 255, 255);
+}
+
+.row-1 h3{
+    color: rgb(99, 96, 96);
+}
+#bran{
+    padding-top: 3rem;
+}
+
+.brand{
+    background-image: url(yellow.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 70vh;
+}
+
+.brand .head-1{
+    text-align: center;
+        padding-top: 5rem;
+        font-size: 25px;
+}
+
+.head-1 h3{
+    font-size: 17px;
+        color: rgb(169 169 169);
+        font-weight: 900;
+}
+
+.cap {
+    display: flex;
+        justify-content: space-around;
+        padding-top: 4rem;
+        font-size: 36px;
+    
+}
+
+.cap .ever{
+    font-weight: 900;
+}
+
+.cap .bit{
+    font-weight: 900;
+    font-family: sans-serif;
+}
+
+.cap .humbr{
+    font-weight:bolder ;
+}
+
+.link{
+    text-align: center;
+        padding-top: 5rem;
+}
+
+.link a{
+    text-decoration: none;
+        font-weight: 900;
+        color: rgb(0 0 0);
+}
+
+.picture {
+   background-image: url(lightgrey.jpg);
+   background-position: center;
+   background-size: cover;
+   height: 55vh;     
+}
+
+.hms h1{
+    color: gold;
+}
+
+.hms p{
+    color: darkgray;
+}
+
+.main-3{
+    display: flex;
+    padding-top: 3rem;
+    justify-content: space-around;
+}
+
+input{
+    border: 1px solid rgb(204 204 204);
+        padding-left: 1rem;
+        background-color: rgb(169 169 169);
+        font-weight: bold;
+        height: 2rem;
+}
+
+button{
+    border: 1px solid rgb(204 204 204);
+        height: 2rem;
+        width: 7rem;
+        font-weight: bold;
+        background-color: rgb(255 215 0);
+}
+.flex{
+    display: flex;
+    gap: 10px;
+}
+
+.flex ul li{
+    list-style: none;
+}
+
+.box{
+    background-color: rgba(255, 217, 0, 0.904);
+        width: 16rem;
+        border-radius: 8px;
+}
+.box-1{
+    text-align: center;
+}
+
+.box-1 img{
+    height: 3rem;
+}
+
+.box-1 h1{
+    font-size: 18px;
+}
+
+.line-1{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 1rem;
+}
+
+.line-2{
+    display: flex;
+        font-weight: 900;
+        justify-content: space-around;
+        padding-top: 1rem;
+}
+
+.footer{
+    background-color: rgba(0, 0, 0, 0.877);
+    height: 40px;
+    display: flex;
+}
+
+.footer-1 h1{
+    padding-left: 2rem;
+        padding-top: 0.6rem;
+        font-size: 17px;
+        color: rgb(169 169 169);
+}
+
+.icons{
+    padding-left: 50rem;
+    padding-left: 50rem;
+        display: flex;
+        gap: 15px;
+        padding-top: 0.7rem;
+}
+
+.icons a svg{
+    color: white;
+}
